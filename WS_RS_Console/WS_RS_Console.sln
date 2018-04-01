@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_RS_Console", "WS_RS_Console\WS_RS_Console.csproj", "{E91E8B66-10A9-4945-B334-E28B4B777EE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_RS_VelibLabServices", "WS_RS_VelibLabServices\WS_RS_VelibLabServices.csproj", "{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E91E8B66-10A9-4945-B334-E28B4B777EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E91E8B66-10A9-4945-B334-E28B4B777EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E91E8B66-10A9-4945-B334-E28B4B777EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
