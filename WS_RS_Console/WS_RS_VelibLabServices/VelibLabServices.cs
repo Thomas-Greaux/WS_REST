@@ -22,6 +22,13 @@ namespace WS_RS_VelibLabServices
             return JsonConvert.DeserializeObject<List<City>>(result);
         }
 
+        public List<Station> GetStations(string city)
+        {
+            url = "https://api.jcdecaux.com/vls/v1/stations?contract=" + city + "&apiKey=" + apiKey;
+            string result = MyWebRequest();
+            return JsonConvert.DeserializeObject<List<Station>>(result);
+        }
+
         static string MyWebRequest()
         {
             try
