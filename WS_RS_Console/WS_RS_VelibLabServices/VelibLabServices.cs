@@ -29,6 +29,19 @@ namespace WS_RS_VelibLabServices
             return JsonConvert.DeserializeObject<List<Station>>(result);
         }
 
+        public Station GetStation(string city, string station_name)
+        {
+            List<Station> stations = GetStations(city);
+            foreach (Station station in stations)
+            {
+                if(station_name.ToUpper().Contains(station.Name))
+                {
+                    return station;
+                }
+            }
+            return new Station();
+        }
+
         static string MyWebRequest()
         {
             try

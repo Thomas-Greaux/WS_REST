@@ -15,6 +15,9 @@ namespace WS_RS_VelibLabServices
 
         [OperationContract]
         List<Station> GetStations(string city);
+
+        [OperationContract]
+        Station GetStation(string city, string station_name);
     }
     
     [DataContract]
@@ -34,12 +37,20 @@ namespace WS_RS_VelibLabServices
     public class Station
     {
         string name = "Station_Name";
+        int available_bikes = -1;
 
         [DataMember]
         public string Name
         {
             get { return name; }
             set { name = value; }
+        }
+
+        [DataMember]
+        public int Available_bikes
+        {
+            get { return available_bikes; }
+            set { available_bikes = value; }
         }
     }
 }

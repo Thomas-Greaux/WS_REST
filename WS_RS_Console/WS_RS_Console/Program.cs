@@ -12,6 +12,7 @@ namespace WS_RS_Console
     {
         const string listCities = "listCities";
         const string listStations = "listStations";
+        const string bikesAt = "bikesAt";
         const string end = "end";
         const string help = "help";
         const string prompt = "/> ";
@@ -35,6 +36,18 @@ namespace WS_RS_Console
                             if (argv.Length >= 2)
                             {
                                 execute_listStations(argv[1]);
+                            }
+                            else
+                            {
+                                not_enough_args();
+                            }
+                            break;
+                        }
+                    case bikesAt:
+                        {
+                            if(argv.Length >= 3)
+                            {
+                                execute_bikesAt(argv[1], argv[2]);
                             }
                             else
                             {
@@ -71,13 +84,20 @@ namespace WS_RS_Console
             }
         }
 
+        static void execute_bikesAt(string city, string station_name)
+        {
+            Station station = client.GetStation(city, station_name);
+            Console.WriteLine("There are " + station.Available_bikes + " available bikes in that station");
+        }
+
         static void execute_help()
         {
             Console.Write("Liste des commandes:\n" +
-                "listCities:\tlists all the cities\n" +
-                "listStations <city_name>:\tlists all the stations at the city specified\n" +
-                "help:\t\tprints this help\n" +
-                "end:\t\tends this program\n");
+                "listCities---------------------------lists all the cities\n" +
+                "listStations <city_name>-------------lists all the stations at the city specified\n" +
+                "bikesAt <city_name> <station_name>---prints the number of bikes available at the station, from the city specified\n" +
+                "help---------------------------------prints this help\n" +
+                "end----------------------------------ends this program\n");
         }
 
         static void not_enough_args()
