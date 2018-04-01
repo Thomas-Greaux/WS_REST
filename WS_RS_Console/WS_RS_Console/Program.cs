@@ -22,7 +22,7 @@ namespace WS_RS_Console
         {
             Console.WriteLine("Type help for help");
             String cmd = "";
-            while(cmd != end)
+            while(true)
             {
                 Console.Write(prompt);
                 cmd = Console.ReadLine();
@@ -43,6 +43,7 @@ namespace WS_RS_Console
                             break;
                         }
                     case help: execute_help(); break;
+                    case end: return;
                     default: Console.WriteLine("Commande non reconnue, 'help' pour avoir la liste des commandes"); break;
                 }
             }
