@@ -7,7 +7,7 @@ using System.Text;
 
 namespace WS_RS_VelibLabServices
 {
-    [ServiceContract]
+    [ServiceContract(CallbackContract = typeof(IVelibLabServicesEvents))]
     public interface IVelibLabServices
     {
         [OperationContract]
