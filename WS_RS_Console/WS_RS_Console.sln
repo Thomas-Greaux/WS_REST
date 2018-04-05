@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_RS_Console", "WS_RS_Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_RS_VelibLabServices", "WS_RS_VelibLabServices\WS_RS_VelibLabServices.csproj", "{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsLib", "EventsLib\EventsLib.csproj", "{0FF249D0-89D2-4691-97D3-96B6E6FA32B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B870DFB-2552-49F8-BAC2-FD9C8E8E2028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF249D0-89D2-4691-97D3-96B6E6FA32B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF249D0-89D2-4691-97D3-96B6E6FA32B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF249D0-89D2-4691-97D3-96B6E6FA32B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF249D0-89D2-4691-97D3-96B6E6FA32B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
