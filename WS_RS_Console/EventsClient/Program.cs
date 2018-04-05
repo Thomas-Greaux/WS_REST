@@ -10,6 +10,7 @@ namespace EventsClient
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
