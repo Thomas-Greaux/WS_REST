@@ -1,7 +1,1 @@
-# WS_REST
-Mini projet web service
-
-## Extensions
-* Extension 1
-* Extension 2
-* Extension 3
+Git outdated, up-to-date git : https://github.com/Thomas-Greaux/WS_RESET
